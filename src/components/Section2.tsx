@@ -89,10 +89,9 @@ const Section2 = () => {
               <div className="box">
                 <div className="box_head"></div>
                 <div className="box_body">
-                  <h3>A mouse <br /> first experience.</h3>
+                  <h3>Bullets to visuals <br /> in a click.</h3>
                   <p>
-                    Powerful shortcuts and a keyboard-first workflow means you
-                    will get to your finish line in no time!
+                  Transform any block to any other and try different options without any design hassle
                   </p>
                 </div>
               </div>
@@ -101,10 +100,11 @@ const Section2 = () => {
               <div className="box">
                 <div className="box_head"></div>
                 <div className="box_body">
-                  <h3>A screen <br /> first experience.</h3>
+                  <h3 style={{fontSize: '2rem'}}>A powerful assistant <br /> just a click away</h3>
                   <p>
-                    Powerful shortcuts and a keyboard-first workflow means you
-                    will get to your finish line in no time!
+                  Insert blocks, perform powerful actions and 
+                  leverage the limitless power of AI - all without
+                  leaving your keyboard
                   </p>
                 </div>
               </div>
