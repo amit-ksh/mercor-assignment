@@ -1,0 +1,35 @@
+.textreveal_wrapper {
+  height: 200vh;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.textreveal_container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 6rem 2rem;
+  height: 50%;
+  max-width: 60rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.textreveal_container p {
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+p span {
+  opacity: 0.4;
+  transition: opacity 0.2s linear;
+}
+
+@media (min-width: 1000px) {
+  .textreveal_container p {
+    font-size: 3rem;
+  }
+}
