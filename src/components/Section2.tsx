@@ -112,7 +112,7 @@ const Section2 = () => {
             <div className="progress-container">
               <span className="progress-label">0{currentPage}</span>
               <progress ref={progressBar} className="vertical-progress" max="100"></progress>
-              <span className="progress-label">03</span>
+              <span className="progress-label">0{TOTALPAGE}</span>
             </div>
           </div>
         </div>
