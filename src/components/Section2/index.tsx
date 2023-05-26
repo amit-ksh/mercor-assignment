@@ -1,4 +1,4 @@
-import { FC, forwardRef, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import ProgressBar from "../ProgressBar";
 
 import "./style.desktop.css";
