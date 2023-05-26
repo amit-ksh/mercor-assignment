@@ -1,0 +1,114 @@
+.stacked_stack_mobile {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  #section2 {
+    padding: 3.75rem 0;
+  }
+
+  .stacked_wrapper {
+    max-width: none;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stacked_head h2 {
+    font-size: 3rem;
+  }
+
+  .stacked_head {
+    all: unset;
+    flex: 1;
+  }
+
+  .stacked_head p {
+    display: none;
+  }
+
+  .stacked_stack_mobile {
+    display: block;
+    flex: 1;
+  }
+
+  .stacked_stack_mobile .container {
+    position: relative;
+    overflow-x: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+  }
+
+  .boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: transform 500ms ease-out;
+    transform: translate(100%, 0);
+  }
+
+  .box_wrapper {
+    all: unset;
+    box-sizing: border-box;
+    margin: 0 2rem;
+    flex: 1;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .box_wrapper:first-of-type {
+    margin-left: 0;
+  }
+  .box_wrapper:last-of-type {
+    margin-right: 0;
+  }
+
+  .box {
+    width: 85vw;
+  }
+
+  .box_body {
+    padding: 0 1rem 2rem;
+  }
+
+  .stacked_stack p {
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+  }
+}
+
+.swiper-navigation {
+  width: 100%;
+  display: flex;
+  gap: 0.8125rem;
+  padding-top: 1.25rem;
+}
+
+.swiper-navigation button {
+  height: 40px;
+  background: #fff;
+  flex: 1;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
+}
+
+.swiper-button-prev svg {
+  transform: scaleX(-1);
+}
+
+.swiper-navigation button:disabled {
+  background: #101010;
+  cursor: default;
+}
+
+.swiper-navigation button svg {
+  fill: black;
+}
+.swiper-navigation button:disabled svg {
+  fill: gray;
+}

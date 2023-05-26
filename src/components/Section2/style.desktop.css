@@ -1,14 +1,33 @@
-section {
-  padding-bottom: 2rem;
+#section2 {
   color: white;
-  max-width: 90%;
+
+  width: 100%;
+  max-width: calc(1234px + 2rem);
   margin: 0 auto;
+  padding: 9rem 0;
 }
 
 .stacked_wrapper {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 1280px) {
+  #section2 {
+    max-width: 1040px;
+  }
+  .stacked_wrapper {
+    max-width: 95%;
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stacked_wrapper {
+    gap: 2rem;
+  }
 }
 
 .stacked_head {
@@ -21,8 +40,8 @@ section {
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  padding-right: 10%;
 }
 
 .workflow {
@@ -41,43 +60,41 @@ section {
 }
 
 .stacked_head h2 {
-  font-size: 4rem;
+  font-size: 5.5rem;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.02em;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.5rem;
   text-align: left;
+  padding-right: 17%;
 }
 
 .stacked_head p {
   line-height: 1.4;
   opacity: 0.7;
+  padding-right: 22%;
 }
 
-@media (max-width: 1000px) {
-  .stacked_wrapper {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
+@media (max-width: 1280px) {
   .stacked_head {
-    position: static;
+    padding-right: 0;
   }
-
-  .stacked_head p {
-    display: none;
+  .stacked_head h2 {
+    font-size: 4.125rem;
   }
 }
 
 /* RIGHT */
 
-.stacked_stack {
+.stacked_stack_desktop {
   position: relative;
   height: 500vh;
   flex: 1;
 }
 
-.stacked_stack .container {
+.stacked_stack_desktop .container {
+  padding-right: 3rem;
+  flex: 1;
   position: sticky;
   height: 100vh;
   display: flex;
@@ -93,12 +110,16 @@ section {
   transform: translate(0px);
 
   position: absolute;
-  max-width: 500px;
   display: flex;
   align-items: center;
   padding-right: 4rem;
 
-  transition: all 0.5s linear;
+  transition: all 0.55s ease-in-out;
+
+  max-width: 575px;
+  width: 100%;
+  min-height: 180px;
+  height: 100%;
 }
 
 .box {
@@ -107,8 +128,8 @@ section {
 }
 
 .box_head {
-  width: 400px;
-  height: 300px;
+  padding: 0.5rem 0.5rem 0;
+  aspect-ratio: 3 / 2;
 }
 
 .box_body {
@@ -118,7 +139,7 @@ section {
 
 .box_body h3 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 2.375rem;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1;
@@ -132,12 +153,8 @@ section {
   opacity: 0.7;
 }
 
-@media (max-width: 1000px) {
-  .stacked_stack .container {
-    margin: 0 3rem;
-  }
+@media (max-width: 1280px) {
   .box_wrapper {
-    max-width: 100%;
     padding: inherit;
   }
 
@@ -147,50 +164,12 @@ section {
   }
 
   .box_body p {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
   }
 }
 
-/* PROGRESS BAR */
-
-.progress-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  translate: 75% 0;
-}
-
-@media (max-width: 1000px) {
-  .progress-container {
+@media (max-width: 860px) {
+  .stacked_stack_desktop {
     display: none;
   }
-}
-
-.vertical-progress {
-  appearance: none;
-  width: 400px;
-  height: 4px;
-  border-radius: 100px;
-  border: 0;
-  transform: rotate(90deg);
-  background: #232323;
-}
-
-.vertical-progress::-webkit-progress-value {
-  background-color: #a594fd;
-}
-
-.progress-label {
-  text-align: 12px;
-  opacity: 0.4;
-  margin: 0.5rem 0;
-  position: absolute;
-}
-
-.progress-label:first-of-type {
-  top: -240px;
-}
-
-.progress-label:last-of-type {
-  top: 200px;
 }
